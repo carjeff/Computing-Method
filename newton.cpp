@@ -8,7 +8,7 @@ int main(){
     cout<<"\nplease input the number of interpolation node: ";
     cin>>n;
     input(x,f,n);
-    cout<<"\nplease input the interpolation node: ";
+    cout<<"\nplease input the interpolation point : ";
     cin>>_x;
     for(j=1;j<=n-1;j++){
         for(i=j;i<=n-1;i++){
@@ -19,7 +19,7 @@ int main(){
     for(i=n-2;i>=0;i--){
         _y=f[i][i]+(_x-x[i])*_y;
     }
-    printf("\n interpolation node (x,y)= (%lf,%lf)",_x,_y);
+    printf("\n interpolation point (x,y)= (%lf,%lf)",_x,_y);
     return 0;
      
 }
