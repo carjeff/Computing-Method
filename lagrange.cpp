@@ -29,10 +29,12 @@ int main(){
     cout<<"\nPlease input the number of the interpolation node: ";
     scanf("%ld",&n);
     input(x,y,n);
-    cout<<"\nPlease input the interpolation point: ";
-    cin>>a;
-    b=0;
-    b=lagrange(x,y,n,a,b);
-    printf("\nthe interpolation point(x,y)=(%lf,%lf).",a,b);
+    while(1){
+        cout<<"\nPlease input the interpolation point: ";
+        cin>>a;
+        b=0;
+        b=lagrange(x,y,n,a,b);
+        printf("\nthe interpolation point(x,y)=(%lf,%lf).",a,b);        
+    }
     return 0;
 }
